@@ -1,24 +1,33 @@
 {
   "schema": {
     "firstName": {
-      "type": "Text"
+      "type": "Text",
+      "validators": [
+        "required"
+      ]
     },
     "lastName": "Text",
-    "confirm": "Text"
+    "confirm": "Checkbox"
   },
   "template": "WizardTemplate",
   "fieldsets": [
     {
       "legend": "First",
-      "fields": ["firstName"]
+      "fields": [
+        "firstName"
+      ]
     },
     {
       "legend": "Last",
-      "fields": ["lastName"]
+      "fields": [
+        "lastName"
+      ]
     },
     {
       "legend": "Confirm",
-      "fields": ["confirm"]
+      "fields": [
+        "confirm"
+      ]
     }
   ]
 }

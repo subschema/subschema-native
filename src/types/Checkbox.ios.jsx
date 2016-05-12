@@ -15,10 +15,11 @@ export default class Checkbox extends Component {
     };
 
     render() {
+        const {value} = this.props;
         return (
             <SwitchIOS
                 onValueChange={this.changeValue}
-                value={this.props.value == null ? false : this.props.value}/>
+                value={!!value}/>
         );
     }
 }
