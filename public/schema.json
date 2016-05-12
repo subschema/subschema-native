@@ -1,0 +1,24 @@
+{
+  "schema": {
+    "firstName": {
+      "type": "Text"
+    },
+    "lastName": "Text",
+    "confirm": "Text"
+  },
+  "template": "WizardTemplate",
+  "fieldsets": [
+    {
+      "legend": "First",
+      "fields": ["firstName"]
+    },
+    {
+      "legend": "Last",
+      "fields": ["lastName"]
+    },
+    {
+      "legend": "Confirm",
+      "fields": ["confirm"]
+    }
+  ]
+}
