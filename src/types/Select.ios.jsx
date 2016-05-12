@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {PickerIOS, StyleSheet} from 'react-native';
 import PropTypes from 'subschema/PropTypes';
 
-var {Item} = PickerIOS;
+const {Item} = PickerIOS;
 
 export default class SelectInput extends Component {
 
@@ -24,10 +24,14 @@ export default class SelectInput extends Component {
         />
     }
 
+    handleChange = (v) => {
+        this.props.onChange(v);
+    };
+
     render() {
         return <PickerIOS
             selectedValue={this.props.value}
-            onValueChange={this.props.onChange}>
+            onValueChange={this.handleChange}>
             {this.props.options.map(SelectInput.toOption)}
         </PickerIOS>
     }

@@ -1,6 +1,7 @@
 .build
 dist
 .vscode
+ios/App.xcodeproj/project.xcworkspace/xcuserdata/
 jsconfig.json
 npm-debug.log*
 node_modules

@@ -11,11 +11,11 @@ export default class SelectInput extends Component {
         multiselect: PropTypes.bool,
         options: PropTypes.options,
         onChange: PropTypes.valueEvent
-    }
+    };
     static defaultProps = {
         options: [],
         multiselect: false
-    }
+    };
 
     constructor(props, ...rest) {
         super(props, ...rest);

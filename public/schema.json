@@ -6,21 +6,24 @@
         "required"
       ]
     },
+    "date": "Date",
     "lastName": "Text",
-    "confirm": "Checkbox"
+    "confirm": "Checkbox",
+    "select": {
+      "type": "Select",
+      "options": "good,bad,indifferent"
+    }
   },
   "template": "WizardTemplate",
   "fieldsets": [
     {
-      "legend": "First",
-      "fields": [
-        "firstName"
-      ]
+      "legend": "Name",
+      "fields": "firstName,lastName,select"
     },
     {
-      "legend": "Last",
+      "legend": "When",
       "fields": [
-        "lastName"
+        "date"
       ]
     },
     {
